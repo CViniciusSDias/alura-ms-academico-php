@@ -1,0 +1,10 @@
+{
+  "autoload": {
+    "psr-4": {
+      "Alura\\Academico\\": "src/"
+    }
+  },
+  "require": {
+    "php-amqplib/php-amqplib": "^3.0"
+  }
+}
