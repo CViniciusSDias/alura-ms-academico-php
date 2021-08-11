@@ -4,14 +4,23 @@ require_once 'rb.php';
 require_once 'vendor/autoload.php';
 
 use PhpAmqpLib\Connection\AMQPStreamConnection;
+use PhpAmqpLib\Exception\AMQPIOException;
 use PhpAmqpLib\Message\AMQPMessage;
 
 R::setup();
 
-$connection = new AMQPStreamConnection('rabbitmq', 5672, 'guest', 'guest');
+do {
+    try {
+        $connection = new AMQPStreamConnection('rabbitmq', 5672, 'guest', 'guest');
+    } catch (AMQPIOException) {
+        sleep(5);
+        echo 'Retrying' . PHP_EOL;
+    }
+} while(!isset($connection));
 $channel = $connection->channel();
 
 $queue = 'student_enrollment';
+$channel->exchange_declare('client_enrolled', 'fanout', auto_delete: false);
 $channel->queue_declare($queue, auto_delete: false);
 $channel->queue_bind($queue, 'client_enrolled');
 $channel->basic_consume($queue, no_ack: true, callback: function (AMQPMessage $msg) {
