@@ -8,17 +8,14 @@ use PhpAmqpLib\Message\AMQPMessage;
 
 R::setup();
 
-$connection = new AMQPStreamConnection('localhost', 5672, 'guest', 'guest');
+$connection = new AMQPStreamConnection('rabbitmq', 5672, 'guest', 'guest');
 $channel = $connection->channel();
 
-$channel->queue_declare('alura-academico', auto_delete: false);
-$channel->basic_consume('alura-academico', no_ack: true, callback: function (AMQPMessage $msg) {
-    $msgBody = json_decode($msg->body, true);
-    if ($msgBody['msg'] !== 'client_enrolled') {
-        return;
-    }
-
-    $properties = $msgBody['data'];
+$queue = 'student_enrollment';
+$channel->queue_declare($queue, auto_delete: false);
+$channel->queue_bind($queue, 'client_enrolled');
+$channel->basic_consume($queue, no_ack: true, callback: function (AMQPMessage $msg) {
+    $properties = json_decode($msg->body, true);
     $student = R::dispense('student');
     $student->name = $properties['name'];
     $student->email = $properties['email'];
