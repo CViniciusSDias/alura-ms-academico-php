@@ -9,14 +9,7 @@ use PhpAmqpLib\Message\AMQPMessage;
 
 R::setup();
 
-do {
-    try {
-        $connection = new AMQPStreamConnection('rabbitmq', 5672, 'guest', 'guest');
-    } catch (AMQPIOException) {
-        sleep(5);
-        echo 'Retrying' . PHP_EOL;
-    }
-} while(!isset($connection));
+$connection = rabbitMqConnection();
 $channel = $connection->channel();
 
 $queue = 'student_enrollment';
@@ -30,8 +23,8 @@ $channel->basic_consume($queue, no_ack: true, callback: function (AMQPMessage $m
     $student->email = $properties['email'];
     R::store($student);
 
-    echo 'Enviando e-mail para ' . $student->email . PHP_EOL;
-    echo "Olá, {$student->name}!\nPara acessar seus cursos, visite http://localhost:1000/cursos?email={$student->email}";
+    sendMailTo($student);
+    echo 'E-mail enviado' . PHP_EOL;
 });
 
 while ($channel->is_open()) {

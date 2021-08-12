@@ -2,9 +2,14 @@
   "autoload": {
     "psr-4": {
       "Alura\\Academico\\": "src/"
-    }
+    },
+    "files": [
+      "functions.php"
+    ]
   },
   "require": {
-    "php-amqplib/php-amqplib": "^3.0"
+    "php-amqplib/php-amqplib": "^3.0",
+    "symfony/mailer": "^5.3",
+    "symfony/google-mailer": "^5.3"
   }
 }
