@@ -13,7 +13,7 @@ $connection = rabbitMqConnection();
 $channel = $connection->channel();
 
 $queue = 'student_enrollment';
-$channel->exchange_declare('client_enrolled', 'fanout', auto_delete: false);
+$channel->exchange_declare('client_enrolled', 'fanout', durable: true, auto_delete: false);
 $channel->queue_declare($queue, auto_delete: false);
 $channel->queue_bind($queue, 'client_enrolled');
 $channel->basic_consume($queue, no_ack: true, callback: function (AMQPMessage $msg) {
