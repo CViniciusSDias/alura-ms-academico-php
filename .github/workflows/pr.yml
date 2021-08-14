@@ -1,0 +1,21 @@
+name: PR pipeline
+on: [pull_request]
+jobs:
+  phpcs:
+    name: PHP Code Sniffer
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Composer
+        uses: php-actions/composer@v5
+        with:
+          php_version: 8.0
+          version: 2
+          php_extensions:
+            - pdo
+            - pdo_pgsql
+
+      - name: PHP Code Sniffer
+        run: composer run phpcs
