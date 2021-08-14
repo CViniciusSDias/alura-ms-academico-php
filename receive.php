@@ -7,7 +7,8 @@ use PhpAmqpLib\Connection\AMQPStreamConnection;
 use PhpAmqpLib\Exception\AMQPIOException;
 use PhpAmqpLib\Message\AMQPMessage;
 
-R::setup(getenv('DB_DSN'), getenv('DB_USERNAME'), getenv('DB_PASSWORD'));
+R::setup(
+    getenv('DB_DSN'), getenv('DB_USERNAME'), getenv('DB_PASSWORD'));
 
 $connection = rabbitMqConnection();
 $channel = $connection->channel();
