@@ -1,0 +1,34 @@
+version: '3.7'
+services:
+  consumer-academico:
+    build: ./academico-php
+    volumes:
+      - ./academico-php:/app
+      - type: bind
+        source: ./academico-php.sh
+        target: /app/entrypoint.sh
+    working_dir: /app
+    command: sh ./entrypoint.sh
+    depends_on:
+      - rabbitmq
+      - postgre-academico
+    environment:
+      DB_DSN: pgsql:host=postgre-academico;dbname=academico;port=5432
+      DB_USERNAME: usuario_academico
+      DB_PASSWORD: senhapg
+      RABBITMQ_HOST: 'rabbitmq'
+      RABBITMQ_PORT: 5672
+      RABBITMQ_USERNAME: guest
+      RABBITMQ_PASSWORD: guest
+
+  rabbitmq:
+    image: rabbitmq
+    ports:
+      - 5672:5672
+
+  postgre-academico:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: senhapg
+      POSTGRES_USER: usuario_academico
+      POSTGRES_DB: academico
