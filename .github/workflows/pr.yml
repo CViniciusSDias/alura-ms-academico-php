@@ -13,7 +13,6 @@ jobs:
         with:
           php_version: 8.0
           version: 2
-          php_extensions: pdo pdo_pgsql
 
       - name: PHP Code Sniffer
         run: composer run phpcs
