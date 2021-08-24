@@ -38,14 +38,14 @@ function sendMailTo(OODBBean $student): void
     Bons estudos!
     FIM;
 
-    $usuario = 'carlosv775@gmail.com';
+    $usuario = getenv('GMAIL_USER');
     $email = (new Email())
         ->from($usuario)
         ->to($student->email)
         ->subject('Matrícula confirmada')
         ->text($mensagem);
 
-    $senha = 'guhwlvppptrhafob';
+    $senha = getenv('GMAIL_PASSWORD');
     $transport = Transport::fromDsn("gmail+smtp://$usuario:$senha@default");
     $mailer = new Mailer($transport);
     $mailer->send($email);
