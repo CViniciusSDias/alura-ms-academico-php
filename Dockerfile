@@ -1,4 +1,4 @@
-FROM php
+FROM php:8.0
 
 RUN apt-get update && apt-get install -y libzip-dev libpq-dev
 
