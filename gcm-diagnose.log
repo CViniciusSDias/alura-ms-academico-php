@@ -1,0 +1,194 @@
+﻿Diagnose log at 2023-01-13T15:18:34Z
+
+AppPath: /usr/local/bin/git-credential-manager
+InstallDir: /usr/local/share/gcm-core/
+Version: 2.0.886+ea93cb5158
+
+------------
+Diagnostic: Environment
+Skipped: False
+Success: True
+Exception: None
+Log:
+OSType: Linux
+OSVersion: Linux adroaldo-MINT 5.15.0-58-generic #64-Ubuntu SMP Thu Jan 5 11:43:13 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+Reading environment variables... OK
+ Variables:
+XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0
+XDG_CONFIG_DIRS=/etc/xdg/xdg-cinnamon:/etc/xdg
+QT_QPA_PLATFORMTHEME=qt5ct
+XAUTHORITY=/home/adroaldo/.Xauthority
+LESSOPEN=| /usr/bin/lesspipe %s
+NVM_BIN=/home/adroaldo/.nvm/versions/node/v16.15.0/bin
+GIT_EXEC_PATH=/usr/lib/git-core
+QT_ACCESSIBILITY=1
+SYSTEMD_EXEC_PID=3630
+SESSION_MANAGER=local/adroaldo-MINT:@/tmp/.ICE-unix/1220,unix/adroaldo-MINT:/tmp/.ICE-unix/1220
+XDG_RUNTIME_DIR=/run/user/1000
+DESKTOP_SESSION=cinnamon
+XDG_SESSION_TYPE=x11
+TERM=xterm-256color
+SHLVL=1
+HOME=/home/adroaldo
+PATH=/usr/lib/git-core:/home/adroaldo/.nvm/versions/node/v16.15.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/23568230_f379_4d0e_9434_ca273bc73266
+LANG=pt_BR.UTF-8
+NVM_DIR=/home/adroaldo/.nvm
+NVM_CD_FLAGS=
+NVM_INC=/home/adroaldo/.nvm/versions/node/v16.15.0/include/node
+_=/usr/bin/git
+USER=adroaldo
+XDG_SESSION_DESKTOP=cinnamon
+IM_CONFIG_PHASE=1
+XDG_CURRENT_DESKTOP=X-Cinnamon
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+GNOME_TERMINAL_SERVICE=:1.100
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+XDG_SESSION_CLASS=user
+XDG_DATA_DIRS=/usr/share/cinnamon:/usr/share/gnome:/home/adroaldo/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop
+GDM_LANG=pt_BR
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+GTK3_MODULES=xapp-gtk3-module
+DISPLAY=:0
+GTK_MODULES=gail:atk-bridge
+XDG_GREETER_DATA_DIR=/var/lib/lightdm-data/adroaldo
+GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1
+GDMSESSION=cinnamon
+OLDPWD=/home/adroaldo/alura/alura-ms
+VTE_VERSION=6800
+XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0
+LESSCLOSE=/usr/bin/lesspipe %s %s
+SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
+PWD=/home/adroaldo/alura/alura-ms/academico-php
+GTK_OVERLAY_SCROLLING=1
+COLORTERM=truecolor
+SHELL=/bin/bash
+LOGNAME=adroaldo
+LANGUAGE=pt_BR:pt:en
+
+
+------------
+Diagnostic: File system
+Skipped: False
+Success: True
+Exception: None
+Log:
+Temporary directory is '/tmp/'...
+Checking basic file I/O...
+Writing to temporary file '/tmp/c0914cec9574b3304eb2e32a'... OK
+Reading from temporary file '/tmp/c0914cec9574b3304eb2e32a'... OK
+Deleting temporary file '/tmp/c0914cec9574b3304eb2e32a'... OK
+Testing IFileSystem instance...
+UserHomePath: /home/adroaldo
+UserDataDirectoryPath: /home/adroaldo/.gcm
+GetCurrentDirectory(): /home/adroaldo/alura/alura-ms/academico-php
+
+------------
+Diagnostic: Networking
+Skipped: False
+Success: False
+Exception:
+System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 100 seconds elapsing.
+ ---> System.TimeoutException: A task was canceled.
+ ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpClient.HandleFailure(Exception e, Boolean telemetryStarted, HttpResponseMessage response, CancellationTokenSource cts, CancellationToken cancellationToken, CancellationTokenSource pendingRequestsCts)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at GitCredentialManager.Diagnostics.NetworkingDiagnostic.RunInternalAsync(StringBuilder log, IList`1 additionalFiles)
+   at GitCredentialManager.Diagnostics.Diagnostic.RunAsync()
+Log:
+Checking networking and HTTP stack...
+Creating HTTP client... OK
+IsNetworkAvailable: True
+Sending HEAD request to http://example.com... OK
+Sending HEAD request to https://example.com...
+------------
+Diagnostic: Git
+Skipped: False
+Success: True
+Exception: None
+Log:
+Getting Git version... OK
+Git version is '2.34.1'
+Locating current repository... OK
+Git repository at '/home/adroaldo/alura/alura-ms/.git/modules/academico-php'
+Listing all Git configuration... OK
+Git configuration:
+file:/etc/gitconfig	credential.helper=
+file:/etc/gitconfig	credential.helper=/usr/local/bin/git-credential-manager
+file:/etc/gitconfig	credential.https://dev.azure.com.usehttppath=true
+file:/home/adroaldo/.gitconfig	safe.directory=/home/adroaldo/Downloads/forum
+file:/home/adroaldo/.gitconfig	user.email=adroaldoaragao@yahoo.com.br
+file:/home/adroaldo/.gitconfig	user.name=adroaldofilho
+file:/home/adroaldo/.gitconfig	credential.helper=
+file:/home/adroaldo/.gitconfig	credential.helper=/usr/local/bin/git-credential-manager
+file:/home/adroaldo/.gitconfig	credential.https://dev.azure.com.usehttppath=true
+file:/home/adroaldo/alura/alura-ms/.git/modules/academico-php/config	core.repositoryformatversion=0
+file:/home/adroaldo/alura/alura-ms/.git/modules/academico-php/config	core.filemode=true
+file:/home/adroaldo/alura/alura-ms/.git/modules/academico-php/config	core.bare=false
+file:/home/adroaldo/alura/alura-ms/.git/modules/academico-php/config	core.logallrefupdates=true
+file:/home/adroaldo/alura/alura-ms/.git/modules/academico-php/config	core.worktree=../../../academico-php
+file:/home/adroaldo/alura/alura-ms/.git/modules/academico-php/config	remote.origin.url=https://github.com/CViniciusSDias/alura-ms-academico-php.git
+file:/home/adroaldo/alura/alura-ms/.git/modules/academico-php/config	remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+file:/home/adroaldo/alura/alura-ms/.git/modules/academico-php/config	branch.main.remote=origin
+file:/home/adroaldo/alura/alura-ms/.git/modules/academico-php/config	branch.main.merge=refs/heads/main
+
+
+------------
+Diagnostic: Credential storage
+Skipped: False
+Success: False
+Exception:
+System.Exception: No credential store has been selected.
+
+Set the GCM_CREDENTIAL_STORE environment variable or the credential.credentialStore Git configuration setting to one of the following options:
+
+  secretservice : freedesktop.org Secret Service (requires graphical interface)
+  gpg           : GNU `pass` compatible credential storage (requires GPG and `pass`)
+  cache         : Git's in-memory credential cache
+  plaintext     : store credentials in plain-text files (UNSECURE)
+
+See https://aka.ms/gcm/credstores for more information.
+
+   at GitCredentialManager.CredentialStore.EnsureBackingStore()
+   at GitCredentialManager.CredentialStore.Remove(String service, String account)
+   at GitCredentialManager.Diagnostics.CredentialStoreDiagnostic.RunInternalAsync(StringBuilder log, IList`1 additionalFiles)
+   at GitCredentialManager.Diagnostics.Diagnostic.RunAsync()
+Log:
+ICredentialStore instance is of type: CredentialStore
+Writing test credential...Deleting test credential...
+------------
+Diagnostic: Microsoft authentication (AAD/MSA)
+Skipped: False
+Success: True
+Exception: None
+Log:
+Broker not supported.
+Flow type is: Auto
+Gathering MSAL token cache data... OK
+CacheDirectory: /home/adroaldo/.local/.IdentityService
+CacheFileName: msal.cache
+CacheFilePath: /home/adroaldo/.local/.IdentityService/msal.cache
+KeyringCollection: 
+KeyringSchemaName: 
+KeyringSecretLabel: 
+KeyringAttribute1: (,)
+KeyringAttribute2: (,)
+Creating cache helper... OK
+Verifying MSAL token cache persistence... OK
+
+------------
+Diagnostic: GitHub API
+Skipped: False
+Success: True
+Exception: None
+Log:
+Using 'https://github.com/' as API target.
+Querying '/meta' endpoint... OK
+
