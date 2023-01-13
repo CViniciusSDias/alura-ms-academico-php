@@ -21,7 +21,7 @@ services:
       RABBITMQ_USERNAME: guest
       RABBITMQ_PASSWORD: guest
       GMAIL_USER: 'adroaldoprogramador@gmail.com'
-      GMAIL_PASSWORD: 'Guilherm3'
+      GMAIL_PASSWORD: 'Guilherm3' 
 
   rabbitmq:
     image: rabbitmq
