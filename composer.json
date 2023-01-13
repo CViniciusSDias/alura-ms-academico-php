@@ -8,7 +8,7 @@
     ]
   },
   "require": {
-    "php-amqplib/php-amqplib": "^4.0",
+    "php-amqplib/php-amqplib": "^3.0",
     "symfony/mailer": "^5.3",
     "symfony/google-mailer": "^5.3"
   },
