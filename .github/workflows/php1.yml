@@ -16,7 +16,7 @@ jobs:
     - name: Composer Install
       uses: php-actions/composer@v6
       with:
-        php_version: "7.4"
+        php_version: "8.0"
         php_extensions: sockets pdo_pgsql
         
     - name: PHPCS
