@@ -272,7 +272,7 @@
             "time": "2020-10-15T08:29:30+00:00"
         },
         {
-            "name": "php-amqplib/php-amqplib",
+            "name": "php-amqplib/php-amqplib", 
             "version": "v4.0.0",
             "source": {
                 "type": "git",
