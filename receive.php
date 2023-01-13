@@ -7,13 +7,13 @@ use PhpAmqpLib\Connection\AMQPStreamConnection;
 use PhpAmqpLib\Exception\AMQPIOException;
 use PhpAmqpLib\Message\AMQPMessage;
 
-R::setup(
-    getenv('DB_DSN'), getenv('DB_USERNAME'), getenv('DB_PASSWORD')); 
+R::setup(getenv('DB_DSN'), getenv('DB_USERNAME'), getenv('DB_PASSWORD')); 
 
 $connection = rabbitMqConnection();
 $channel = $connection->channel();
 
-$queue = 'student_enrollment';
+$queue = 
+    'student_enrollment';
 $channel->exchange_declare('client_enrolled', 'fanout', durable: true, auto_delete: false);
 $channel->queue_declare($queue, auto_delete: false);
 $channel->queue_bind($queue, 'client_enrolled');
